@@ -85,6 +85,16 @@
 									 Network segmentation, firewalls, and intrusion detection systems can also help prevent unauthorized access and limit the impact of any attacks.
 									<br> Overall, the cybersecurity of IoT networks is essential for ensuring the safety, privacy, and reliability of the devices and systems they connect. 
 									As IoT technology continues to evolve and become more pervasive, the need for effective cybersecurity measures will only increase.</p>
+								<br>
+								<h3>Reference</h3>
+								<p> <ul>
+										<li> O. Bhat, "Introduction to IoT," ResearchGate, Jan. 2019. <a href="https://www.researchgate.net/profile/Omkar-Bhat/publication/330114646_Introduction_to_IOT/links/5c2e31cf299bf12be3ab21eb/Introduction-to-IOT.pdf">https://www.researchgate.net/profile/Omkar-Bhat/publication/330114646_Introduction_to_IOT/links/5c2e31cf299bf12be3ab21eb/Introduction-to-IOT.pdf.</a></li>
+										<li>"What is IoT Cybersecurity?," Dataconomy, Feb. 2023. <a href="https://dataconomy.com/2023/02/what-is-iot-cybersecurity/#Risks_and_threats_to_IoT_cybersecurity">https://dataconomy.com/2023/02/what-is-iot-cybersecurity/#Risks_and_threats_to_IoT_cybersecurity.</a></li>
+										<li>"Introduction to Cybersecurity," IGI Global, 2021. <a href="https://www.igi-global.com/chapter/introduction-to-cyber-security/306856">https://www.igi-global.com/chapter/introduction-to-cyber-security/306856.</a></li>
+									</ul>
+								</p>
+								<br>
+								<button onclick="goBack()">Back</button>
 							</article>
 						
 						<!-- About -->
@@ -107,6 +117,8 @@
 										<li><b>Turkish:</b> I am not good enough at it "I know only the basic"</li>
 									</ul>
 								</p>
+								<br>
+								<button onclick="goBack()">Back</button>
 							</article>
 
 						<!-- Contact -->
@@ -135,18 +147,21 @@
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
+								<br>
 								<ul class="icons">
 									<li><a href="https://www.linkedin.com/in/sulayman-alruwais-563451261/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 									<li><a href="https://www.facebook.com/sliman.arwis" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="https://instagram.com/sulayman_alruwais?igshid=YmMyMTA2M2Y=" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 									<li><a href="https://github.com/sulayman-IT" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
+								<br>
+								<button onclick="goBack()">Back</button>
 							</article>
 
 							<!-- Activity 1 -->
 							<article id="act1">
 								<h1>Scanning Activity</h1><br>
-								<p>The first activity is Scanning which I tested two command tools in Command Prompt to display Network configration of Windows oprating system.</p>
+								<p>The first activity is Scanning which I tested four command tools in Command Prompt to display Network configration of Windows oprating system.</p>
 								<br>
 								<figure>
 									<img src="images/ipconfig-1.png" alt="" class="act-img"><br><br>
@@ -173,16 +188,37 @@
 								 <p>Figure 2.1 and Figure 2.2 show the 'ipconfig /all' command-line tool that provides more detailed information about network configration,
 									containing the MAC address, DNS servers, and DHCP server information for all network adapters on the system. </p>
 								<br>
-								<h3>Overall</h3>
+								<figure>
+									<img src="images/tracert.png" alt="" class="act-img"><br><br>
+									<figcaption>Figure 3 - tracert</figcaption>
+								</figure><br>
+
+								<p>Figure 3 shows that I used 'tracert' command-line tool that is used to trace the route that packets take from your computer to a specified destination on the Internet.
+									I tested a website called 'www.a2hosting.com' to see what information gives me, for example the hops assigned from my computer to the website?, and other questions. <br>
+									Q1 - How many hops from your machine to your assigned website?<br>
+									There are 5 hops assigned from my laptop to www.a2hosting.com and over maximum of 30 hops. <br>
+									Q2 - Which step causes the biggest delay in the route? What is the average duration of that delay? <br>
+									The fourth hop causes the biggest delay, with average duration 19.3 ms. <br>
+								</p>
+
+
+
+								<figure>
+									<img src="images/nslookup.png" alt="" class="act-img"><br><br>
+									<figcaption>Figure 4 - nslookup</figcaption>
+								</figure><br>
+								
+								<br>
+								<h3>Reflict</h3>
 								<p>Overall, both ipconfig and ipconfig /all commands are useful tools for managing and troubleshooting network connections in a Windows operating system. By using these commands,
 									 users can quickly and easily access important network configuration information that can help diagnose and resolve network issues.</p>
 
 
-
+								<button onclick="goBack()">Back</button>
 							</article>
 
 
-						<!-- Elements -->
+						<!-- Elements 
 							<article id="elements">
 								<h2 class="major">Elements</h2>
 
@@ -422,7 +458,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 									</form>
 								</section>
 
-							</article>
+							</article>-->
 
 					</div>
 
@@ -442,6 +478,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				function goBack() {
+					window.history.back();
+			  	}
+			</script>
+			
 
 	</body>
 </html>
