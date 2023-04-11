@@ -1677,3 +1677,11 @@ figcaption {
 	left: 0;
 	right: 0;
 }
+.mepic{
+  	align-items: center;
+  	justify-content: center;	
+}
+.mepic img{
+	width: 40%;
+  	height: 70%;
+}
