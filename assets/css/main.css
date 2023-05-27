@@ -49,6 +49,7 @@ blockquote, q {
 	}
 
 table {
+	text-align: center;
 	border-collapse: collapse;
 	border-spacing: 0;
 }
@@ -154,12 +155,13 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+		/*border-bottom: dotted 1px rgba(255, 255, 255, 0.5);*/
 		text-decoration: none;
 		color: inherit;
 	}
 
 		a:hover {
+			color:cyan;
 			border-bottom-color: transparent;
 		}
 
@@ -1673,6 +1675,7 @@ figure {
 figcaption {
 	position: absolute;
 	text-align: center;
+	font-weight: bold;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -1685,3 +1688,21 @@ figcaption {
 	width: 40%;
   	height: 70%;
 }
+img.honey{
+	width: 62px;
+	height: 62px;
+	display: inline-block;
+	vertical-align: middle;
+  }
+  img.scanning{
+	width: 92px;
+	height: 92px;
+	display: inline-block;
+	vertical-align: middle;
+  }
+  img.ddos{
+	width: 162px;
+	height: 92px;
+	display: inline-block;
+	vertical-align: middle;
+  }
