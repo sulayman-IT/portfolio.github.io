@@ -49,22 +49,52 @@
 									so in this part of the protfolio, I will explain what I have learned about it.</p>
 								<h2><a href="#introduction">Introduction</a></h2>
 								<hr>
-								<h2>Activities</h2>
+								<h2>&nbsp;Activities</h2>
 								<div class="table-wrapper">
 									<table class="alt">
 										<thead>
 											<tr>
-												<td><a href="#act1">Activity 1 - Scanning</a></td>
-												<td><a href="#act2">Activity 2 - HoneyPot</a></td>
+												<td>
+													<figure>
+														<a href="#act1"><img src="images/scanning.png" alt="" class="scanning"><br><br>
+														<figcaption>Scanning</figcaption>
+														</a>
+													</figure>
+												</td>
+												<td>
+													<figure>
+														<a href="#act2"><img src="images/honey.png" alt="" class="honey"><br><br>
+														<figcaption>Honeypot</figcaption>
+														</a>
+													</figure>
+												</td>
+											</tr>
+											<br>
+											<tr>
+												<td>
+													<figure>
+														<a href="#act3"><img src="images/ddos.png" alt="" class="ddos"><br><br>
+														<figcaption>DDoS</figcaption>
+														</a>
+													</figure>
+												</td>
+												<td>
+													<figure>
+														<a href="#act4"><img src="images/digitalisation.png" alt="" class="ddos"><br><br>
+														<figcaption>Digitalisation</figcaption>
+														</a>
+													</figure>
+												</td>
 												
 											</tr>
 											<tr>
-												<td><a href="#act3">Activity 3 - DDOS</a></td>
-												<td><a href="#act4">Activity 4</a></td>
-												
-											</tr>
-											<tr>
-												<td><a href="#act5">Activity 5</a></td>
+												<td>
+													<figure>
+														<a href="#act5"><img src="images/top10.jpg" alt="" class="ddos"><br><br>
+														<figcaption>OWASP Top 10 and IEEE Top 10</figcaption>
+														</a>
+													</figure>
+												</td>
 												<td><a href="#act6">Activity 6</a></td>
 												
 											</tr>
@@ -75,6 +105,7 @@
 											</tr>
 										</thead>
 									</table>
+									
 								</div>
 
 							</article>
@@ -189,7 +220,7 @@
 									<figcaption>Figure 1.2 - ipconfig</figcaption>
 								</figure>
 								<br>
-								<p>Figure 1.1 and Figure 1.2 show 'ipconfig' comand-line tool that provides some information about network configration like IP Address, type, subnet mask, and
+								<p><b>Figure 1.1</b> and <b>Figure 1.2</b> show 'ipconfig' comand-line tool that provides some information about network configration like IP Address, type, subnet mask, and
 								 default gateway for all network adapter on the system.</p>
 								
 								 <br><br><br>
@@ -202,32 +233,36 @@
 									 <figcaption>Figure 2.2 - ipconfig /all</figcaption>
 								 </figure>
 								 <br>
-								 <p>Figure 2.1 and Figure 2.2 show the 'ipconfig /all' command-line tool that provides more detailed information about network configration,
+								 <p><b>Figure 2.1</b> and <b>Figure 2.2</b> show the 'ipconfig /all' command-line tool that provides more detailed information about network configration,
 									containing the MAC address, DNS servers, and DHCP server information for all network adapters on the system. </p>
-								<br>
+								<br><br><br>
 								<figure>
 									<img src="images/tracert.png" alt="" class="act-img"><br><br>
 									<figcaption>Figure 3 - tracert</figcaption>
 								</figure><br>
 
-								<p>Figure 3 shows that I used 'tracert' command-line tool that is used to trace the route that packets take from your computer to a specified destination on the Internet.
+								<p><b>Figure 3</b> shows that I used 'tracert' command-line tool that is used to trace the route that packets take from your computer to a specified destination on the Internet.
 									I tested a website called 'www.a2hosting.com' to see what information gives me, for example the hops assigned from my computer to the website?, and other questions. <br>
 									Q1 - How many hops from your machine to your assigned website?<br>
 									There are 5 hops assigned from my laptop to www.a2hosting.com and over maximum of 30 hops. <br>
 									Q2 - Which step causes the biggest delay in the route? What is the average duration of that delay? <br>
 									The fourth hop causes the biggest delay, with average duration 19.3 ms. <br>
-								</p>
+								</p><br><br>
 
 								<figure>
 									<img src="images/nslookup.png" alt="" class="act-img"><br><br>
 									<figcaption>Figure 4 - nslookup</figcaption>
 								</figure><br>
-								
+								<p><b>Figure 4</b> shows a command 'nslookup' network tool that is useful for troubleshooting network issues and verifying DNS information. 
+									<br>It displays the Domain Name System(DNS), IP address, domain name, and other DNS records.
+								</p>
+								<hr>
 								<br>
 								<h3>Reflect</h3>
-								<p>Overall, both ipconfig and ipconfig /all commands are useful tools for managing and troubleshooting network connections in a Windows operating system. By using these commands,
-									 users can quickly and easily access important network configuration information that can help diagnose and resolve network issues.</p>
-
+								<p>Overall, in the activity 1 I have learned some command-line tools for scanning, and these commands are 'ipconfig', 'ipconfig /all', 'nslookup', and 'tracert'. <br>
+									I have learned how to get more information about networking configration as well as website info such as MAC address, IP address, DNS records, and the packets that is sent from my laptop to any assigned website.
+									 Also it will help me to troubleshooting any network problem that may face me in the future.
+								</p>
 
 								<button onclick="goBack()">Back</button>
 							</article>
@@ -239,43 +274,71 @@
 						<article id="act2">
 							<h1>HoneyPot atteck</h1>
 							<br>
+							<p>A honeypot is a security resource intentionally designed to be explored, exploited, or hacked to detect and gather data on attack trends, hacker motives, 
+								and technical abilities. It is a detection and reaction tool, not a preventive one, and does not block specific intrusions or the transmission of viruses or worms.
+								 Defenders can use the information gathered to construct stronger defences and countermeasures against future security threats.
+								  Overall, honeypots are used to learn as much as possible about attack patterns and hacker behaviour.</p>
 							<figure>
 								<img src="images/act2-1.png" alt="" class="act-img"><br><br>
 								<figcaption>Figure 1</figcaption>
-							</figure> <br>
+							</figure><br>
+							<p><b>Figure 1</b> shows that I am on terminal in Lunix Kali oprating system to do Honeypot Attack, so first thing in normal user I wrote 'ifconfig' command to get inet IP, because I will need it later.</p>
+							<br>
 							<figure>
 								<img src="images/act2-2.png" alt="" class="act-img"><br><br>
 								<figcaption>Figure 2</figcaption>
-							</figure> <br>
+							</figure><br>
+							<p><b>Figure 2</b> shows from where I downloaded the honeypot tool which is 'PENTBOX'. So how did I install the PENTBOX? <br>
+							In Google I wrote "pentbox honeypot", then I went to GitHub website then scroll down then you will find the link like in <b>Figure 2</b>, 
+							just copy the link and pasted in Kali Lunix terminal after you enter as a root user as in <b>Figure 3.1.</b></p><br>
 							<figure>
 								<img src="images/act2-3.png" alt="" class="act-img"><br><br>
 								<figcaption>Figure 3.1</figcaption>
-							</figure> <br>
+							</figure><br>
 							<figure>
 								<img src="images/act2-4.png" alt="" class="act-img"><br><br>
 								<figcaption>Figure 3.2</figcaption>
-							</figure> <br>
+							</figure><br>
+							<p><b>Figure 3.1</b>, after I pasted the link and pressed enter, it will be installed, so I type 'ls' command to list computer directories. Then I change the working directory to 'pentbox', 
+								after that I ran it. <br><b>Figure 3.2</b> shows the running of PENTBOX.</p><br>
 							<figure>
 								<img src="images/act2-5.png" alt="" class="act-img"><br><br>
 								<figcaption>Figure 4.1</figcaption>
-							</figure> <br>
+							</figure><br>
 							<figure>
 								<img src="images/act2-6.png" alt="" class="act-img"><br><br>
 								<figcaption>Figure 4.2</figcaption>
-							</figure> <br>
+							</figure><br>
 							<figure>
 								<img src="images/act2-7.png" alt="" class="act-img"><br><br>
 								<figcaption>Figure 4.3</figcaption>
-							</figure> <br>
+							</figure><br>
 							<figure>
 								<img src="images/act2-8.png" alt="" class="act-img"><br><br>
 								<figcaption>Figure 4.4</figcaption>
-							</figure> <br>
+							</figure><br>
+							<p><b>Figure 4.1</b>, After I ran the PENTBOX, I went inside the PENTBOX to pentbox-1.8 directory. Then I used 'ls' command to see if 'pentbox.rb' is found or not. Then I ran it to start set up.<br>
+								<b>Figure 4.2</b> shows after I excuted it (pentbox.rb), it listed the options, which in honeypot should choose second option (Network tools), then it listed different type of attacks which we need is honeypot (number 3)
+							as it shown in Figure 4.3. Then in honeypot option I chose Manual configration (option 2), after that I insarted the port which it was 443 and the message "Cought You!! haha". <br>
+							<b>Figure 4.4</b> I saved the log instrusions and I did not change the name of the log file. Also I did not activate the beep() sound. after I set up the honeypot attack, you can see it is activated in <b>Figure 4.4</b>.</p>
+							<br>
 							<figure>
 								<img src="images/act2-9.png" alt="" class="act-img"><br><br>
 								<figcaption>Figure 5</figcaption>
-							</figure> <br>
-							
+							</figure><br>
+							<p>Figure 5 shows the inet IP that we took in Figure 1, it was working before, but after the attck it had secure connection failed.</p>
+							<hr>
+							<h3>Reflect</h3>
+							<p>Honeypots can be a valuable addition to a comprehensive security strategy, it's important to carefully consider their benefits and drawbacks and use them appropriately.
+								 They should not be relied upon as the sole means of security, but rather as one tool in a larger toolbox.<br>Overall, I have learned how to install the pentbox and set up the hoenypot detection 
+								and how benefit it is, and I had not any learning difficulty about honeypot, installing pentbox, and set it up.</p>
+							<br>
+							<h3>Reference</h3>
+							<ul>
+								<li>M. Zulfiqar and M. Y. Javed, "Honeypots as a Tool for Detecting and Preventing Cyber Attacks," Webology, vol. 18, no. 2, pp. 79-96, 2021. [Online]. Available: <a href="https://www.webology.org/data-cms/articles/20220123051035pmWEB19370.pdf">https://www.webology.org/data-cms/articles/20220123051035pmWEB19370.pdf.</a></li>
+							</ul>
+							<br>
+							<button onclick="goBack()">Back</button>
 						</article>
 
 						<!-- Activity 3 -->
@@ -283,33 +346,206 @@
 						<article id="act3">
 							<h2>Distributed Denial-of-Service (DDoS) attack</h2>
 							<br>
+							<h3>What is DDoS attack?</h3>
+							<p>A distributed denial-of-service (DDoS) attack is a malicious attempt to disrupt the normal traffic of a targeted server, service or network by overwhelming the target or its surrounding infrastructure with a flood of Internet traffic. <br>
+								DDoS attacks achieve effectiveness by utilizing multiple compromised computer systems as sources of attack traffic. Exploited machines can include computers and other networked resources such as IoT devices. <br>
+								From a high level, a DDoS attack is like an unexpected traffic jam clogging up the highway, preventing regular traffic from arriving at its destination.</p>
 							<figure>
 								<img src="images/act3-1.png" alt="" class="act-img"><br><br>
 								<figcaption>Figure 1</figcaption>
-							</figure> <br>
+							</figure><br>
+							<p> <b>Figure 1</b>, The first thing to do is knowing the target IP address, so I used 'ping' with the URL address which I used a website called 'www.a2hosting.com', and this step done in Command Prompt as a system user. <br>
+								So the IP address of the website 'www.a2hosting.com' was 45.93.124.14.</p>
+							<br><br>
 							<figure>
 								<img src="images/act3-2.png" alt="" class="act-img"><br><br>
 								<figcaption>Figure 2</figcaption>
-							</figure> <br>
+							</figure><br>
+							<p><b>Figure 2</b>, after we knew the IP Address, in Kali Linux terminal I used 'sudo -i' to be a root user to have permission to all available commands and files on Linux. 
+							Then I typed 'msfconsole' which is probably the most popular interface to the Metasploit Framework (MSF). It provides an "all-in-one" centralized console and allows you efficient access to virtually all of the options available in the MSF.</p>
+							<br><br>
 							<figure>
 								<img src="images/act3-3.png" alt="" class="act-img"><br><br>
-								<figcaption>Figure 3</figcaption>
-							</figure> <br>
+								<figcaption>Figure 3.1</figcaption>
+							</figure>
+							<br>
 							<figure>
 								<img src="images/act3-4.png" alt="" class="act-img"><br><br>
-								<figcaption>Figure 4</figcaption>
-							</figure> <br>
+								<figcaption>Figure 3.2</figcaption>
+							</figure><br>
+							<p><b>Figure 3.1</b>, after 'msfconsole' finished, I used 'use auxiliary/dos/tcp/synflood' to get access as I the instractor gave it to us, then 
+								I used 'show options' to see the options and what the target port and host. <br><b>Figure 3.2</b>, Then after that I set RHost "rhost 'IP Address' " to the target website or server which is '45.93.124.14',
+								also I set RPort "rport '80 or 443'" we have two port and I chose port 80 as the instructor said in the lecture, then this I ran it.</p>
+								<br><br>
 							<figure>
 								<img src="images/act3-5.png" alt="" class="act-img"><br><br>
-								<figcaption>Figure 5</figcaption>
-							</figure> <br>
+								<figcaption>Figure 4</figcaption>
+							</figure><br>
+							<p><b>Figure 4</b>, So after I made it ready I went to Wireshar and I started it as you can see in the image. <br><b>How do you know if it is working or not?</b>
+							<br>Under the Destination you see the targeted website's IP address which means that it is working.</p>
+							<br><br>
 							<figure>
 								<img src="images/act3-6.png" alt="" class="act-img"><br><br>
-								<figcaption>Figure 6</figcaption>
-							</figure> <br>
+								<figcaption>Figure 5</figcaption>
+							</figure><br>
+							<p><b>Figure 5</b>, shows that the targeted website is not reachable. It may take some time to disable the website.</p>
+							<hr>
+							<h3>Reflect</h3>
+							<p>In this attack I have learned how to do flooding attack to a server, and it was a smooth learning, because it took my attention of how a hacker stop a website and it is my first attack I learned in this course. 
+								Also it will help me to improve my knowledge about this attack and how to mitigate it.</p>
+							<h3>Reference</h3>
+							<ul>
+								<li>Cloudflare. (n.d.). What is a DDoS attack? Retrieved from <a href="https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/">https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/</a></li>
+								<li> "Msfconsole - Metasploit Unleashed," OffSec. [Online]. Available: <a href="https://www.offsec.com/metasploit-unleashed/msfconsole/">https://www.offsec.com/metasploit-unleashed/msfconsole/.</a></li>
+							</ul>
+							<button onclick="goBack()">Back</button>
+						</article>
+
+						<!-- Activity 4 -->
+
+						<article id="act4">
+							<h2>Digitalization</h2>
+							<br>
+							<span class="image main"><img src="images/digitalisation-intro.png" alt="" /></span>
+							<br>
+							<h3>What is Digitalization?</h3>
+							<p>Digitalization is the process of leveraging digital technologies to transform a business model, creating new revenue streams and value-producing opportunities. This involves integrating digital tools and systems into various aspects of a business's operations, from management and communication to production and customer service.
+								In today's competitive landscape, digitalization has become essential for businesses to stay relevant and thrive. It enables organizations to adapt to rapidly changing market conditions, meet customer expectations, and optimize their processes for greater efficiency and productivity.								
+								Using digitized information, digitalization is the process of making workflows and processes easier and more efficient. Especially in today's tech-driven world, it is crucial to adopt a digital culture in order to survive and succeed.
+							</p>
+							<h3>What are the security implications of the digital economy?</h3>
+							<p>In the digital economy, organizations rely heavily on information technology systems and networks to conduct their operations. This dependence introduces various security challenges. Cybersecurity threats, such as hacking, data breaches, and malware attacks, pose significant risks to digital infrastructure, sensitive data, and intellectual property.
+								The increased connectivity and interdependence of digital systems also amplify the potential for cascading effects and systemic risks. A single vulnerability or breach in one part of the digital ecosystem can have far-reaching consequences, impacting multiple organizations and sectors.
+								<br><br> Additionally, the digital economy's global nature raises concerns about international cyber espionage, cyber warfare, and state-sponsored attacks. Governments and malicious actors may seek to exploit vulnerabilities in digital systems for economic, political, or military gains, leading to potential destabilization and conflicts.
+								Privacy and data protection are crucial concerns in the digital economy. The collection, storage, and analysis of vast amounts of personal data raise ethical and legal issues. Unauthorized access or misuse of personal information can result in identity theft, financial fraud, and invasions of privacy.
+								<br><br> Moreover, the rapid pace of technological advancements in the digital economy creates challenges for security practices and regulations. As new technologies emerge, traditional security measures may become outdated, requiring continuous adaptation and investment in cybersecurity capabilities.
+								To address these security implications, organizations need to adopt a proactive and comprehensive approach to cybersecurity. This includes implementing robust security measures, conducting regular risk assessments, raising awareness among employees, and fostering collaboration between public and private sectors to share threat intelligence and best practices.</p>
+							<h3>Fully digital enterprise</h3>
+							<p>A 'fully digital enterprise' refers to an organization that has embraced digital technologies across all aspects of its operations, processes, and interactions. It entails leveraging digital tools and platforms for communication, data storage and analysis, customer engagement, supply chain management, and more. Essentially, 
+								a fully digital enterprise utilizes technology extensively to optimize its efficiency, productivity, and customer experience.</p>
+							<hr>
+							<h3>Reflect</h3>
+							<p></p>
+							<h3>Reference</h3>
+								<ul>
+									<li>"Digitalization," WalkMe Glossary. [Online]. Available: <a href="https://www.walkme.com/glossary/digitalization/#digitalization-vs-digitization">https://www.walkme.com/glossary/digitalization/#digitalization-vs-digitization.</a> [Accessed: May 16, 2023].</li>
+									<li>L. Wei, Z. Zhou, H. Chen, and Y. Yang, "Security implications in the digital economy," in Proceedings of 2018 World Congress on Engineering (WCE), vol. 2, pp. 341-346, London, UK, 2018. Available: <a href="https://www.iaeng.org/publication/WCE2018/WCE2018_pp341-346.pdf">https://www.iaeng.org/publication/WCE2018/WCE2018_pp341-346.pdf</a></li>
+								</ul>
+							<button onclick="goBack()">Back</button>
+						</article>
+
+						<!-- Activity 5 -->
+
+						<article id="act5">
+							<h2>OWASP Top 10 and IEEE Top 10 vulnerabilities</h2>
+							<hr><br>
+							<h2>OWASP Top 10 vulnerabilities</h2>
+							<span class="image main"><img src="images/OWASP.png" alt="" /></span>
+							<p><b>What is OWASP?</b><br>
+								The Open Worldwide Application Security Project (OWASP) is an online community that produces freely-available articles, methodologies, documentation, tools, and technologies in the field of web application security. The OWASP provides free and open resources. It is led by a non-profit called The OWASP Foundation. 
+								The OWASP Top 10 - 2021 is the published result of recent research based on comprehensive data compiled from over 40 partner organizations. 
+								<br>But in this activity, we will discuss OWASP top 10 vulnerabilities 2023:
+							</p>
+							<ol>
+								<li>
+									<b>Broken Access Control</b>
+									<dd>During app development, access controls are applied that prohibit users from retrieving the information out of their given permission. Failure to perform efficiently can lead to unauthorized information disclosure, data modification, destruction of all data and many other damages. When an application evolves with time and numerous features are loaded to it, failure can occur and this can result in fallout for the application's security.
+										Broken Access Control in any application or website must be prevented at all cost.
+										It is among the commonly faced OWASP 2023 vulnerabilities.</dd>
+								</li>
+								<br>
+								<li>
+									<b>Cryptographic Failures</b>
+									<dd>Poor use of cryptography and algorithm are responsible for a series of threats that are known as Cryptographic failures. It is important to use encrypted connections to application like SFTP, HTTPS, SSH, etc while carrying out any configuration or code changes. 
+										This vulnerability can expose sensitive data such as passwords, business records,
+										 credit card information, email addresses, patient health records, or other personal user data. To prevent this, all data should be stored with the recommended hashing algorithms.</dd>
+								</li>
+								<br>
+								<li>
+									<b>Injection</b>
+									<dd>
+										Injection is one of the oldest vulnerability that can lead to data loss, data theft, service denial, etc and in worst scenario can compromise the full system. Injection attacks, especially SQL Injections (SQLi attacks) and Cross-site Scripting (XSS),
+										 are most dangerous and widespread weakness of any application. 
+										Other than these, there are several other types of Injections that a web developer should look out for. Using a safe API and positive server-side input validation can help in preventing Injections.
+									</dd>
+								</li>
+								<br>
+								<li>
+									<b>Insecure Design</b>
+									<dd>To keep application free of security gaps, it is recommended that developers use safe design patterns and securely created threat modeling while designing. 
+										A secure application can be build using secured component library, tooling and methodology. Implementation of ineffective control design can lead to different weaknesses termed as
+										Insecure Design. It is suggested to determine the level of security design before beginning the app development to prevent Insecure Design vulnerability.</dd>
+								</li>
+								<br>
+								<li>
+									<b>Security Misconfiguration</b>
+									<dd>Inaccurately or insecurely configured security controls can cause Security
+										Misconfiguration vulnerability and put the system and data to risk. Unnecessary features enabled or installed, outdated software, etc can also cause Security Misconfiguration.
+										This threat can impact any layer of the application stack, cloud or network, leaving important information to expose. It can be prevented by implementing secure installation process.
+										 Using an automated process to verify the effectiveness of the configurations and settings in all environments is also recommended.</dd>
+								</li>
+								<br>
+								<li>
+									<b>Vulnerable and Outdated Components</b>
+									<dd>If the components used in the development of a website or application is outdated or is vulnerable itself, it can compromise the whole application. This is known as Vulnerable and Outdated Components vulnerability. 
+										A developer should also always know the versions of components being used and should perform regular scan for vulnerabilities to keep problems at bay. As a protective measure, remove unnecessary features, unused dependencies,
+										 components, files and documentation from time to time.</dd>
+								</li>
+								<br>
+								<li>
+									<b>Identification and Authentication Failures</b>
+									<dd>Before accessing any protected site, the application must keep a check on user's identity, authentication, and session management. These things are important for protection against authentication-related attacks or can else lead to Identification and Authentication Failures vulnerability. 
+										With the introduction of two-factor authentication, the number of failures has reduced but is still too frequent to be listed in the OWASP Top 10 vulnerabilities 2023. Limiting failed login attempts and generating a new random session ID at every login can further prevent the issue.</dd>
+								</li>
+								<br>
+								<li>
+									<b>Software and Data Integrity Failures</b>
+									<dd>Code and infrastructure that does not protect against integrity violations can lead to Software and data integrity failures. It is therefore important to verify the installed packages on your system and make sure that the data is from a reliable source and has not been altered at any stage.
+										 Implementing libraries and dependencies, software supply chain security tool, and review process for code and configuration changes are other ways of preventing this vulnerability.</dd>
+								</li>
+								<br>
+								<li>
+									<b>Security Logging and Monitoring</b>
+									<dd>Security logging and monitoring are vital to the maintenance of a secure infrastructure.
+										Viewing the logs regularly can be helpful in acting fast in case any potentially dangerous activity is noticed. On the other hand, insufficient monitoring of log activities can lead to a bunch of issues collectively termed as Security logging and monitoring vulnerability.
+										Depending on the risk of the application, protective measures must be applied to eliminate any risk as soon as possible.</dd>
+								</li>
+								<br>
+								<li>
+									<b>Server-Side Request Forgery</b>
+									<dd>Server-Side Request Forgery (SSRF) occurs when a web application procures a distant resource without validating the URL supplied by the user. The attacker can send a crafted request to an unexpected destination, even if protected by a firewall or VPN.
+										Both frequency and severity of this vulnerability has increased with time. To protect an application against SSRF, all the data entered should be checked carefully and each URL scheme should be checked against the allowed list.</dd>
+								</li>
+							</ol>
+							<br>
+							<h2>IEEE Top 10 vulnerabilities</h2>
+							<span class="image main"><img src="images/IEEE.png" alt="" /></span>
+							<p><b>What is IEEE?</b><br>
+								The IEEE (Institute of Electrical and Electronics Engineers) describes itself as "the world's largest technical professional society -- promoting the development and application of electrotechnology and allied sciences for the benefit of humanity, 
+								the advancement of the profession, and the well-being of our members."<br>
+								So in this activity, I will show the IEEE top ten vulnerabilities 2021: 
+							</p>
+							<ol>
+								<li>
+									<b></b>
+								</li>
+							</ol>
+								
+							
+							<hr>
+							<h3>Reflect</h3>
+							<p></p>
+							<h3>Reference</h3>
+								<ul>
+									<li>"The Open Worldwide Application Security Project (OWASP)," Wikipedia, The Free Encyclopedia. [Online]. Available: <a href="https://en.wikipedia.org/wiki/OWASP">https://en.wikipedia.org/wiki/OWASP</a>. [Accessed: May 16, 2023].</li>
+									<li>"OWASP Top 10 vulnerabilities" <a href="https://www.edudwar.com/owasp-top-10-vulnerabilities/">https://www.edudwar.com/owasp-top-10-vulnerabilities/</a></li>
+									<li>"The IEEE (Institute of Electrical and Electronics Engineers)," TechTarget. [Online]. Available: <a href="https://www.techtarget.com/whatis/definition/IEEE-Institute-of-Electrical-and-Electronics-Engineers">https://www.techtarget.com/whatis/definition/IEEE-Institute-of-Electrical-and-Electronics-Engineers</a>. [Accessed: May 16, 2023].</li>
+								</ul>
+							<button onclick="goBack()">Back</button>
 						</article>
 
 
+						
 						<!-- Elements 
 							<article id="elements">
 								<h2 class="major">Elements</h2>
